@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Course Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header id="navbar">
+
+  <div class="container nav">
+	<div class="logo">
+	<img src="logo.png" alt="EngCourse Logo">
+	<span>EngCourse</span>
+	</div>
+    <nav id="nav-menu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#paket" class="nav-link">Paket</a>
+      <a href="#testimoni" class="nav-link">Testimoni</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+
+  <!-- Background -->
+  <div class="hero-bg"></div>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-wrapper">
+    
+    <div class="hero-text reveal">
+      <h1>
+        <span class="gradient-text">Upgrade Skill Bahasa Inggris Kamu Untuk :</span><br>
+        <span id="typing" class="typing-color"></span><span class="cursor">|</span>
+      </h1>
+
+      <p>
+        “Bangun percaya diri untuk speaking, interview, dan kariermu.”
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-premium" onclick="scrollToPaket()">
+          Lihat Kelas
+        </button>
+		<button class="btn-secondary" onclick="scrollTocontact()">
+			Konsultasi Gratis
+		</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Paket -->
+<section id="paket" class="pricing">
+  <div class="container">
+
+    <h2 class="pricing-title reveal">Program Kelas</h2>
+    <p class="pricing-subtitle reveal">
+      Pilih kelas sesuai kebutuhan belajar kamu — fleksibel & terarah
+    </p>
+
+    <div class="pricing-grid">
+
+  <!-- GE -->
+  <div class="pricing-item reveal delay-1">
+    <span class="badge highlight">All Level</span>
+
+    <div class="pricing-card">
+      <h3 class="pricing-name">General English (SD - SMA)</h3>
+      <p class="pricing-type">Offline / Online • 90 menit</p>
+
+      <p class="pricing-price">Rp50K - 65K</p>
+
+      <ul class="pricing-mini">
+        <li>Basic - Intermediate</li>
+        <li>Grammar & Speaking</li>
+        <li>Disesuaikan level siswa</li>
+      </ul>
+
+      <a href="#" class="pricing-btn"
+    onclick="goToWA('Halo Admin, saya ingin daftar Kelas General English (SD-SMA)')">
+    Pilih Kelas
+    </a>
+    </div>
+  </div>
+
+  <!-- TOEFL -->
+  <div class="pricing-item reveal delay-2">
+    <span class="badge">Best Choice</span>
+
+    <div class="pricing-card featured">
+      <h3 class="pricing-name">TOEFL Preparation</h3>
+      <p class="pricing-type">Online • 90 menit</p>
+
+      <p class="pricing-price">Rp120K</p>
+
+      <ul class="pricing-mini">
+        <li>Latihan soal TOEFL</li>
+        <li>Strategi menjawab cepat</li>
+        <li>Simulasi test real</li>
+      </ul>
+
+      <a href="#" class="pricing-btn"
+    onclick="goToWA('Halo Admin, saya ingin daftar Kelas TOEFL Preparation')">
+    Pilih Kelas
+    </a>
+    </div>
+  </div>
+
+  <!-- Conversation -->
+  <div class="pricing-item reveal delay-3">
+    <div class="pricing-card">
+      <h3 class="pricing-name">English Conversation</h3>
+      <p class="pricing-type">Online • 90 menit</p>
+
+      <p class="pricing-price">Rp75K</p>
+
+      <ul class="pricing-mini">
+        <li>Latihan speaking aktif</li>
+        <li>Daily conversation</li>
+        <li>Improve confidence</li>
+      </ul>
+
+      <a href="#" class="pricing-btn"
+    onclick="goToWA('Halo Admin, saya ingin daftar Kelas English Conversation')">
+    Pilih Kelas
+    </a>
+    </div>
+  </div>
+
+  <!-- Job Seeker -->
+  <div class="pricing-item reveal delay-4">
+    <div class="pricing-card">
+      <h3 class="pricing-name">English for Job Seeker</h3>
+      <p class="pricing-type">Online • 90 menit</p>
+
+      <p class="pricing-price">Rp100K</p>
+
+      <ul class="pricing-mini">
+        <li>Interview practice</li>
+        <li>CV & HR simulation</li>
+        <li>Professional speaking</li>
+      </ul>
+
+      <a href="#" class="pricing-btn"
+    onclick="goToWA('Halo Admin, saya ingin daftar Kelas English for Job Seeker')">
+    Pilih Kelas
+    </a>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+<section id="testimoni" class="testimoni">
+  <div class="container">
+
+    <h2 class="testi-title reveal">Apa Kata Mereka?</h2>
+    <p class="testi-subtitle reveal delay-1">Dari belajar hingga percaya diri — ini cerita mereka</p>
+
+    <div class="carousel">
+	<div class="carousel-track">
+
+  <!-- DUPLICATE LAST (untuk kiri) -->
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="user1.jpg" alt="user">
+    <div>
+      <h4>Andi Pratama</h4>
+      <span>Mahasiswa</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Sekarang saya lebih percaya diri saat speaking!"
+  </p>
+</div>
+	
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="user3.jpg" alt="user">
+    <div>
+      <h4>Angga Yunanda</h4>
+      <span>Mahasiswa Umsida</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Materinya gampang dipahami dan langsung bisa dipraktekin."
+  </p>
+</div>
+	
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="user2.jpg" alt="user">
+    <div>
+      <h4>Andi Pratama</h4>
+      <span>Siswa SMA An-nur</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Tutor-nya sabar banget, jadi enak buat yang masih beginner seperti saya."
+  </p>
+</div>
+
+  <!-- ORIGINAL -->
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="aif.jpeg" alt="user">
+    <div>
+      <h4>M. Afif Taqiuddin</h4>
+      <span>Siswa SMK Telkom</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Kelas menyenangkan, enggak bikin bosen, materi mudah untuk dimengerti. "
+  </p>
+</div>
+
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="hisyam.jpeg" alt="user">
+    <div>
+      <h4>Muammar Hisyam</h4>
+      <span>Mahasiswa Unair</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Pembelajaran menyenangkan dan materi mudah dimengerti karena diajarkan dengan baik"
+  </p>
+</div>
+
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="daffa.jpeg" alt="user">
+    <div>
+      <h4>Daffa Malik F.</h4>
+      <span>Mahasiswa Binawan </span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Pemateri tidak hanya memberikan materi, tetapi juga membantu membangun kepercayaan diri saya."
+  </p>
+</div>
+
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="aufa.jpeg" alt="user">
+    <div>
+      <h4>Aufa Dzakyyy</h4>
+      <span>Siswa SMK Lab JKT</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Pembelajaran yg menyenangkan, baik dalam pembahasan maupun pengerjaan materi dan soalnya"
+  </p>
+</div>
+
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="dewa.jpeg" alt="user">
+    <div>
+      <h4>Dewa Bagus A.</h4>
+      <span>Mahasiswa Gunadarma</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Saya merasa terbantu dalam meningkatkan kemampuan Bahasa Inggris saya di program Conversation"
+  </p>
+</div>
+
+  <!-- DUPLICATE FIRST (untuk kanan) -->
+		<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="user4.jpg" alt="user">
+    <div>
+      <h4>Tiara Andini</h4>
+      <span>Mahasiswi Unesa</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Dulu cuma ngerti teori, tapi susah ngomong. Sekarang sudah bisa conversation sehari-hari."
+  </p>
+</div>
+
+	<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="user5.jpg" alt="user">
+    <div>
+      <h4>Yoga kembung</h4>
+      <span>Mahasiswa Umsida</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Baru beberapa pertemuan, tapi progress-nya kerasa banget. saya lebih percaya diri saat speaking!"
+  </p>
+</div>
+
+<div class="carousel-card active">
+  <div class="testi-user">
+    <img src="user2.jpg" alt="user">
+    <div>
+      <h4>Andi Pratama</h4>
+      <span>Mahasiswa</span>
+    </div>
+  </div>
+
+  <p class="testi-text">
+    "Sekarang saya lebih percaya diri saat speaking!"
+  </p>
+</div>
+
+	</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="container contact-wrapper">
+
+    <!-- LEFT: INFO -->
+    <div class="contact-info">
+      <h2 class="contact-title reveal">Hubungi Kami</h2>
+      <p class="contact-subtitle reveal delay-1">
+        Siap bantu kamu mulai perjalanan belajar bahasa Inggris 🚀
+      </p>
+
+      <div class="contact-list">
+        <div class="contact-item reveal delay-2">
+          <span>📍</span>
+          <p>Sidoarjo, Indonesia</p>
+        </div>
+        <div class="contact-item reveal delay-3">
+          <span>📞</span>
+          <p>+62 811-3339-545</p>
+        </div>
+        <div class="contact-item reveal delay-4">
+          <span>✉️</span>
+          <p>yulike1207@gmail.com</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/628113339545?text=Halo%20Admin%2C%20saya%20ingin%20konsultasi%20gratis"
+         target="_blank"
+         class="contact-wa reveal delay-4">
+        Chat via WhatsApp
+      </a>
+    </div>
+
+    <!-- RIGHT: FORM -->
+    <div class="contact-form reveal">
+	
+	<h3 class="form-title">💬 Konsultasi Gratis</h3>
+	<p class="form-subtitle">Isi form di bawah, untuk konsultasi gratis</p>
+  
+      <form onsubmit="sendToWA(event)">
+        <div class="input-group">
+          <input type="text" required>
+          <label>Nama</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+
+        <div class="input-group">
+          <textarea required></textarea>
+          <label>Pesan</label>
+        </div>
+
+        <button type="submit" class="contact-btn">
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-center">
+      <div class="footer-logo">
+        <img src="logo.png" alt="logo">
+        <span>EnglishCourse</span>
+      </div>
+
+      <p class="footer-tagline">
+        Belajar English jadi lebih percaya diri & terarah
+      </p>
+
+      <div class="footer-menu">
+        <a href="#paket">Paket</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 EnglishCourse. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
